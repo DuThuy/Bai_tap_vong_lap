@@ -1,0 +1,61 @@
+#print-btn{
+    display: block;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
+
+#print-btn:hover{
+    background-color: #ccc; 
+    color: #000;
+}
+
+
+#month-calander{
+width: 600px;
+margin-top: 30px;
+text-align: justify;
+}
+
+#t-head {
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    padding: 16px 0;
+    background: #006e33;
+    margin-top: 0;
+    border-bottom: 1px solid #519038;
+    box-shadow: 1px 1px 1px #888888;
+}
+
+table{
+    width: 100%;
+    background: #5CB85C;
+    box-shadow: 1px 1px 1px #888888;
+    /* border-collapse: collapse; */
+    border-spacing: 0;
+}
+.week-day{
+    width: 14%;
+    text-align: center;
+    line-height: 18px;
+    font-size: 13px;
+    color: white;
+    padding: 6px;
+    border-left: 1px solid #0B730B;
+    border-right: 1px solid #4E913D;
+    border-bottom: 1px solid #448D35;
+    background: #117b11;
+}
+
+.date{
+    font-family: Tahoma,Arial;
+    padding: 15px;
+    border: 1px solid #0B730B;
+    /* cursor: pointer; */
+    background: white;
+    
+}

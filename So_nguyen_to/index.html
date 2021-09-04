@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập in số nguyên tố</title>
+</head>
+
+<body>
+    <style>
+        div {
+            margin-right: 50px;
+            border: 1px solid #000;
+        }
+
+        #result {
+            padding: 20px;
+            font-size: 24px;
+            background-color: #ccc;
+            border: none;
+        }
+    </style>
+
+    <!-- <h2>Dãy 30 số nguyên tố đầu tiên</h2> -->
+    <!-- <div>
+        <fieldset id="result"></fieldset>
+    </div> -->
+
+    <script>
+        // Hàm kiểm tra số nguyên tố
+        function checkPrime(input) {
+            let check = true
+            for (i = 2; i < input; i++) {
+                if (input % i === 0) {
+                    check = false
+                    break;
+                }
+            }
+            console.log(check)
+            return check;
+        }
+
+        // Hàm hiển thị 30 số nguyên tố đầu tiên
+        function takeListPrime() {
+            let input = 3
+            let count = 1
+            document.write(2)
+
+            while (count < 30) {
+                if (checkPrime(input) === true) {
+                    document.write(", " + input);
+                    count++;
+                }
+                input++
+            }
+        }
+        takeListPrime()
+    </script>
+</body>
+
+</html>
